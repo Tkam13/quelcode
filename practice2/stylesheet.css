@@ -21,3 +21,6 @@ th,td{
   border: solid 1px;
   padding: 10px;
 }
+.td-bold{
+  font-weight: bold;
+}

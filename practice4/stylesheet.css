@@ -28,6 +28,7 @@ a:hover{
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 li {
   display: inline-block;
@@ -42,12 +43,12 @@ nav{
 
 .nav-container-left{
   justify-content: left;
-  margin: 0 auto 0 20px;
+  margin: 10px auto 0 20px;
 }
 
 .nav-container-right{
   justify-content: right;
-  margin: 0 20px 0 0 ;
+  margin: 10px 20px 0 0 ;
 }
 
 .account-icon{
@@ -117,13 +118,38 @@ button[name="top-result-display-button"]{
 footer{
   margin: auto 0 0 0;
   background-color: #f2f2f2;
+  color: #7b7b7b;
+}
+
+footer a{
+  color: #7b7b7b;
+}
+
+footer li{
+  margin: 5px 10px ;
+}
+
+span.location{
+  margin: 10px 30px;
+}
+
+.footer-container-upside{
+  border: solid #c7c7c7;
+  border-width: 1px 0 1px 0;
+}
+
+.footer-container-downside{
+  margin: 0 0 5px 0;
+  font-size: 12px;
 }
 
 .footer-container-downside-left{
   justify-content: left;
+  margin-left: 20px;
 }
 
 .footer-container-downside-right{
   justify-content: right;
   margin-left: auto;
+  margin-right: 20px;
 }

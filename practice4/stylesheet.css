@@ -27,14 +27,27 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-input#search-field{
-  width : 500px;
+  padding: 150px 0px 200px 0px;
 }
 
 .logo-img{
-  max-width: 272px;
+  scale: 100%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input#search-field{
+  height: 45px;
+  width : 585px;
+  margin: 20px;
+}
+
+button{
+  margin: 8px;
 }
 
 .nav-container-left{

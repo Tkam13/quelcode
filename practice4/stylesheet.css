@@ -1,3 +1,7 @@
+*:focus{
+  outline: none;
+}
+
 body{
   margin: 0;
 }
@@ -13,6 +17,15 @@ dev{
 
 nav{
   display: flex;
+}
+
+.nav-container-left{
+  justify-content: left;
+  margin-right: auto;
+}
+
+.nav-container-right{
+  justify-content: right;
 }
 
 ul {
@@ -41,22 +54,46 @@ form{
 }
 
 input#search-field{
+  -webkit-appearance:none;
   height: 45px;
   width : 585px;
   margin: 20px;
+  border-radius: 40px;
+  border: solid #c7c7c7 1px;
+  padding: 0px 50px;
+  font-size: 16px;
+}
+
+.input-container{
+  position: relative;
+}
+
+.search-icon-img{
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.mic-icon-img{
+  position: absolute;
+  top: 30px;
+  right: 40px;
 }
 
 button{
   margin: 8px;
+  height: 34px;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  color: #7b7b7b
 }
-
-.nav-container-left{
-  justify-content: left;
-  margin-right: auto;
+button[name="search-botton"]{
+  width: 115px;
 }
-
-.nav-container-right{
-  justify-content: right;
+button[name="top-result-display-button"]{
+  width: 150px;
 }
 
 footer{

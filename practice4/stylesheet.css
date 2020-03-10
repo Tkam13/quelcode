@@ -10,6 +10,15 @@ dev{
   display: flex;
 }
 
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -22,21 +31,27 @@ ul {
 }
 li {
   display: inline-block;
+  margin: 10px 5px;
   vertical-align: middle;
 }
 
 nav{
   display: flex;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .nav-container-left{
   justify-content: left;
-  margin-right: auto;
+  margin: 0 auto 0 20px;
 }
 
 .nav-container-right{
   justify-content: right;
+  margin: 0 20px 0 0 ;
+}
+
+.account-icon{
+  width: 36px;
 }
 
 .main-container{

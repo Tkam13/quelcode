@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* 共通 */
+html,body{
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #393939;
+  background-color: #efefef;
+}
+
+body,div,p,h1,h2,h3,h4,ul,figure{
+  margin: 0;
+  padding: 0;
+}
+
+p,td,th,li{
+  line-height: 1.8;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+a{
+  color: #709a00;
+}
+
+a:hover{
+  color: #95cd00;
+}
+
+a:active{
+  color:#4b6700;
+}
+
+.img_responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+/* PC用のcontainer */
+@media screen and (min-width: 768px){
+  .container{
+    padding: 0 10px;
+  }
+}
+
+/* 見出し */
+main h1{
+  margin-bottom: 1rem;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+/* header */
+header{
+  background-color: #c84040; 
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* nav */
+nav{
+  background-color: #393939;
+  color: #efefef;
+}
+
+/* main */
+main{
+  background-color: #efefef;
+}
+/* footer */
+footer{
+  background-color: #c84040;
+}

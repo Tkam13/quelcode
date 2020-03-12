@@ -49,7 +49,7 @@ a:active{
 /* PC用のcontainer */
 @media screen and (min-width: 768px){
   .container{
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 
@@ -69,10 +69,69 @@ header{
   justify-content: space-between;
   align-items: center;
 }
+
+.header-logo{
+  padding: 10px 0;
+  width: 160px;
+  height: 37px;
+}
+
+.header-logo a{
+  display: block;
+}
+
+.menu-btn{
+  width: 40px;
+  height: 40px;
+  border: #ffffff solid 1px;
+  border-radius: 3px;
+  background: url(../images/hamburger.png) no-repeat center center;
+  background-size: contain;
+}
+/* PC向けレイアウト */
+@media screen and (min-width: 768px){
+  .menu-btn{
+    display: none;
+  }
+  
+  .header-logo{
+    width: 200px;
+    height: 46px;
+    padding: 20px 0;
+  }
+}
 /* nav */
 nav{
   background-color: #393939;
   color: #efefef;
+}
+
+.nav-bar{
+  display: none;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.nav-bar a{
+  display: block;
+  text-decoration: none;
+  color: #efefef;
+  padding: 0.6em;
+}
+
+.nav-bar a:hover{
+  background: #c84040;
+}
+
+.nav-bar a.nav-current{
+  background: #c84040;
+}
+
+/* PC用のレイアウト */
+@media screen and (min-width: 768px){
+  .nav-bar{
+    display: flex;
+  }
 }
 
 /* main */

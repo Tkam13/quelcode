@@ -141,4 +141,28 @@ main{
 /* footer */
 footer{
   background-color: #c84040;
+  font-size: 0.9rem;
 }
+
+.footer-nav{
+  display: flex;
+  list-style: none;
+  padding: 1em 0 0 0;
+}
+
+.footer-nav a{
+  display: block;
+  color: #efefef;
+  text-decoration: none;
+  padding: 0 1rem 0 0;
+}
+
+.footer-nav a:hover{
+  opacity: 0.5;
+}
+
+.footer-copyright{
+  color: #efefef;
+  padding-bottom: 20px;
+}
+

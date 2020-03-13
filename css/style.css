@@ -137,7 +137,17 @@ nav{
 /* main */
 main{
   background-color: #efefef;
+  padding: 50px 0;
 }
+
+.main-heading{
+  font-size: 1.3rem;
+  color: #c84040;
+  margin: 10px;
+  padding: 10px 0;
+  border-bottom: dashed 1px #c84040;
+}
+
 /* footer */
 footer{
   background-color: #c84040;
@@ -166,3 +176,144 @@ footer{
   padding-bottom: 20px;
 }
 
+/* home main */
+
+.home-maincopy{
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px){
+  .home-maincopy{
+    font-size: 2.4rem;
+  }
+}
+
+.home-news{
+  border: solid 1px #efefef;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 10px;
+  background: #ffffff;
+}
+
+.home-course{
+  margin: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/* PC用レイアウト */
+@media screen and (min-width: 768px){
+  .home-course{
+    flex-flow: row;
+  }
+}
+
+.home-course li{
+  padding: 10px;
+  border: solid 5px #efefef;
+  background: #ffffff;
+}
+.home-course a{
+  color: #393939;
+  text-decoration: none;
+}
+
+.home-course figure:hover{
+  opacity: 0.5;
+}
+
+.home-course figcaption{
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+/* コース紹介 */
+
+.course-container{
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 768px){
+  .course-container{
+    flex-flow: row;
+  }
+  .course-image-container{
+    flex: 1 1 400px;
+  }
+  .course-text-container{
+    flex: 1 1 580px;
+  }
+}
+
+.course-image{
+  border: solid 1px #efefef;
+  border-radius: 40px;
+}
+
+.course-speclist{
+  list-style: none;
+}
+
+.course-label{
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  color: #efefef;
+  font-size: 0.7rem;
+  margin-right:5px;
+  background: #c84040;
+  border: solid 1px #c84040;
+  border-radius: 3px;
+}
+
+.course-description{
+  padding: 30px;
+  background: #ffffff url(../images/point.png) no-repeat;
+  background-size: 50px 50px; 
+  border: solid 1px #ffffff;
+  border-radius: 8px;
+}
+
+.course-schedule{
+  border-collapse: collapse;
+}
+
+.course-schedule td, .course-schedule th{
+  padding: 0.5em 1em;
+  border-bottom: 1px dotted #aeaeae;
+}
+
+.course-instructer{
+  overflow: hidden;
+}
+
+.course-instructer img{
+  float: left;
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.course-button{
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  color: #efefef;
+  text-decoration: none;
+  text-align: center;
+  background: #709a00;
+  border-radius: 4px;
+}
+
+.course-button:hover{
+  background: #95cd00;
+  color: #efefef;
+}

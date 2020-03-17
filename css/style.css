@@ -1,0 +1,449 @@
+@charset "utf-8";
+
+/* 共通 */
+html,body{
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #393939;
+  background-color: #efefef;
+}
+
+body,div,p,h1,h2,h3,h4,ul,figure{
+  margin: 0;
+  padding: 0;
+}
+
+p,td,th,li{
+  line-height: 1.8;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+a{
+  color: #709a00;
+}
+
+a:hover{
+  color: #95cd00;
+}
+
+a:active{
+  color:#4b6700;
+}
+
+.img_responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+/* PC用のcontainer */
+@media screen and (min-width: 768px){
+  .container{
+    padding: 0 10px;
+  }
+}
+
+/* 見出し */
+main h1{
+  margin-bottom: 1rem;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+/* header */
+header{
+  background-color: #c84040; 
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo{
+  width: 160px;
+  height: 37px;
+  padding: 10px 0;
+}
+
+.menu-btn{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background: url(/images/hamburger.png);
+  background-size: contain;
+  border: #efefef solid 1px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px){
+  .header-logo{
+    width: 200px;
+    height: 46px;
+    padding: 20px 0;
+  }
+
+  .menu-btn{
+    display: none;
+  }
+}
+
+/* nav */
+nav{
+  background-color: #393939;
+  color: #efefef;
+}
+
+.nav-list{
+  display: none;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px){
+  .nav-list{
+    display: flex;
+  } 
+}
+
+.nav-list li{
+  flex: 1 1 auto;
+}
+
+.nav-list a{
+  display: block;
+  color: #efefef;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.3em 0;
+}
+
+.nav-list a:hover{
+  background: #c84040;
+}
+
+
+/* main */
+main{
+  background-color: #efefef;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px){
+  main{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* ホーム */
+
+.home-catchcopy{
+  font-size: 1.4rem;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px){
+  .home-catchcopy{
+    font-size: 2.4rem
+  } 
+}
+
+.home-color1{
+  color: #f8b173
+}
+
+.home-color2{
+  color: #74b9d9
+}
+
+.home-color3{
+  color: #8bca85;
+}
+
+.home-color4{
+  color: #f8817e;
+}
+
+.home-strong{
+  font-weight: bold;
+  color: #c84040;
+}
+
+.home-headline{
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #c84040;
+  border-bottom: #c84040 dashed 1px;
+  padding-bottom: 0.3em;
+}
+
+.home-news{
+  padding: 30px;
+  margin:10px 0 40px 0;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.home-course{
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 768px){
+  .home-course{
+    flex-flow: row;
+  }
+}
+
+.home-course li{
+  background: #ffffff;
+  padding: 5px 5px 5px 5px;
+  margin: 3px;
+  text-align: center;
+}
+
+.home-course a{
+  display: block;
+  color: #393939;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.home-course figure:hover{
+  opacity: 0.5;
+}
+
+.home-course figcaption{
+  margin: 20px;
+}
+
+/* コース紹介 */
+
+.course-summary{
+  display: flex;
+  flex-flow: column;
+}
+
+.course-img{
+  border-radius: 10px;
+}
+
+.course-text-h2{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.course-spex{
+  margin: 20px 0;
+  list-style: none;
+}
+
+.course-label{
+  background: #c84040;
+  color: #efefef;
+  font-size: 0.7rem;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 768px){
+  .course-summary{
+    flex-flow: row;
+  } 
+
+  .course-img-container{
+    flex: 1 1 400px;
+    margin-right: 20px;
+  }
+
+  .course-text{
+    flex: 1 1 540px;
+  }
+}
+
+.course-description{
+  background: #fff url(/images/point.png) no-repeat;
+  padding: 2em;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.course-headline{
+  color: #c84040;
+  font-size: 1.3rem;
+  padding-bottom: 0.1em;
+  border-bottom: #c84040 dashed 1px;
+}
+
+.course-schedule{
+  border-collapse: collapse;
+  margin: 10px 0 30px 0;
+}
+
+.course-schedule th,.course-schedule td{
+  border-bottom: #aeaeae dashed 1px;
+  padding: 0.5em 1em;
+}
+
+.course-instructor{
+  overflow: hidden;
+  margin: 10px 0 0 0;
+}
+
+.course-instructor-img{
+  float: left;
+  width: 20%;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+}
+
+.course-instructor-name{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+}
+
+.course-signup-button{
+  display: block;
+  margin: 30px auto;
+  padding: 1em 0;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 300px;
+  background: #709a00;
+  color: #efefef;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.course-signup-button:hover{
+  background: #95cd00;
+  color: #efefef;
+}
+
+/* よくある質問 */
+
+.qanda-headline{
+  font-size: 1.6rem;
+  font-weight: normal;
+  border-bottom: 1px dashed #c84040;
+  padding-bottom: 0.1em;
+}
+
+.qanda-list{
+  list-style: none;
+  margin: 30px 0;
+}
+
+.qanda-list li{
+  padding:10px 0 10px 50px;
+  margin: 10px 0;
+}
+
+.qanda-list li:nth-child(odd){
+  color: #6eba44;
+  font-weight: bold;
+  background: url(/images/q.png) no-repeat left ;
+  background-size: 40px 40px;
+}
+
+.qanda-list li:nth-child(even){
+  background: url(/images/a.png) no-repeat left top;
+  background-size: 40px 40px;
+  margin-bottom: 20px;
+}
+
+/* お申込み */
+
+.contact-headline{
+  font-size: 1.6rem;
+  font-weight: normal;
+  border-bottom: 1px dashed #c84040;
+  padding-bottom: 0.1em;
+}
+
+.contact-form{
+  padding: 20px;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+  display: block;
+  border: #aeaeae solid 1px;
+  border-radius: 3px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea{
+  padding: 0.5em 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px){
+  .contact-form input[type="text"],
+  .contact-form input[type="email"]{
+    width: 50%;
+  }
+}
+
+.contact-form p{
+  padding: 0.5em 0;
+}
+
+.contact-form input[type="submit"]{
+  width: 320px;
+  padding: 0.7em 0;
+  margin: 20px 0;
+  background: #709a00;
+  color: #efefef;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+
+/* footer */
+footer{
+  background-color: #c84040;
+  font-size: 0.9rem;
+}
+
+.footer-list{
+  list-style: none;
+  display: flex;
+  padding-top: 20px;
+}
+
+.footer-list a{
+  color: #efefef;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.footer-list a:hover{
+  opacity: 0.5;
+}
+
+.footer-copyright{
+  color: #efefef;
+  padding-bottom: 20px;
+}
